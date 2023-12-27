@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Minesweeper</title>
+  </head>
+  <body>
+    <h3 class="title">Minesweeper</h3>
+    <span id="show"></span>
+    <div class="subtext">Mines Left: <span data-mine-count></span></div>
+    <div class="buttons">
+      <button id="easy">easy</button>
+      <button id="medium">medium</button>
+      <button id="hard">hard</button>
+      <button id="custom">custom</button>
+    </div>
+    <input placeholder="board size" type="number" class="cSize" id="cSize">
+    <input placeholder="number of mines" type="number" class="cMines" id="cMines">
+    <button class="cCustom" id="cCustom" >start custom</button>
+    <div class="board"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
