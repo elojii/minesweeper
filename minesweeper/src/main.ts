@@ -59,7 +59,6 @@ custom.addEventListener("click", () => {
 cCustom.addEventListener('click',()=>{
   const size = parseInt(cSize.value);
   const mines = parseInt(cMines.value);
-  console.log(size)
   if (!isNaN(size) && !isNaN(mines)) {
     resetGame(size, mines);
   }

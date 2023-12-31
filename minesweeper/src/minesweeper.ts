@@ -92,8 +92,6 @@ const nearByTiles = (board: Tile[][], { x, y }: Tile): Tile[] => {
     for (let yOffset = -1; yOffset <= 1; yOffset++) {
       const tile = board[x + xOffset]?.[y + yOffset];
       if (tile) tiles.push(tile);
-      console.log(tile);
-      console.log(x, y);
     }
   }
   return tiles;
