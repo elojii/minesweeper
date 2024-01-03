@@ -82,8 +82,6 @@ export const revealTile = (board: Tile[][], tile: Tile) => {
   } else {
     tile.element.textContent = mines.length.toString();
   }
-  if (tile.status === TILE_STATUSES.MINE) {
-  }
 };
 
 const nearByTiles = (board: Tile[][], { x, y }: Tile): Tile[] => {
